@@ -2,35 +2,37 @@
   <!-- <h1>Привет из APP vue</h1> -->
   <!-- <Hello :text="text" />
 <Gallery /> -->
-  <Authentication: isAuth="isAuthenticated" />
+  <!-- <Authentication: isAuth="isAuthenticated" /> -->
   <!-- //передали пропс -->
-  <UserList />
-  <MortgageCalculator />
+  <!-- <UserList />
+  <MortgageCalculator /> -->
+  <BookList />
+  <MovieList />
 </template>
 
 <script>
-import Hello from './components/Hello.vue';
-import Gallery from './components/Gallery.vue';
-import Authentication from './components/Authentication.vue'
-import UserList from './components/UserList.vue';
-import MortgageCalculator from './components/MortgageCalculator.vue';
+import BookList from './components/BookList.vue';
+import MovieList from './components/MovieList.vue';
+
+// import Hello from './components/Hello.vue';
+// import Gallery from './components/Gallery.vue';
+// import Authentication from './components/Authentication.vue'
+// import UserList from './components/UserList.vue';
+// import MortgageCalculator from './components/MortgageCalculator.vue';
 
 
 export default {
 
   name: 'App',
   components: {
-    Hello,
-    Gallery,
-    Authentication,
-    UserList,
-    MortgageCalculator
+    BookList,
+    MovieList
   },
 
   data() {
     return {
       // text: 'kkkkkkkk',
-      isAuthenticated: false,
+      // isAuthenticated: false,
     };
   },
 }
